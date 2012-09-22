@@ -1,7 +1,7 @@
 @import "twitter/bootstrap/bootstrap";
-body { padding-top: 60px; }
+body { padding-top: 20px; }
 body { 
-	padding-top: 60px;
+	padding-top: 20px;
 }
 
 @import "twitter/bootstrap/responsive";
@@ -31,3 +31,28 @@ body {
 //
 // Example:
 // @linkColor: #ff0000;
+@navbarBackground: @black;
+@navbarBackgroundHighlight: @black;
+@navbarText: @white;
+@navbarLinkColorHover: @white;
+@navbarLinkColor: #eee;
+@dropdownLinkBackgroundHover: #ECDC8F;
+.virtualBg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+     z-index: -120;
+     }
+
+	.hero-unit{
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0) transparent;
+	/* RGBa with 0.6 opacity */
+	background: rgba(0, 0, 0, 0.4);
+}
+.matching-color{
+color: #ECDC8F;
+}
+.waydown{
+padding-top: 420px;
+}

@@ -13,23 +13,32 @@
     <header class="navbar navbar-fixed-top">
       <nav class="navbar-inner">
         <div class="container">
-          <%= render 'layouts/navigation' %>
-        </div>
+         <img src="/assets/logo.png">
+		 <ul class="nav pull-right">
+		                    <li id="fat-menu" class="dropdown">
+		                      <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Language: English <b class="caret"></b></a>
+		                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+		                        <li><a tabindex="-1" href="#">French</a></li>
+		                        <li><a tabindex="-1" href="#">German</a></li>
+		                        <li><a tabindex="-1" href="#">Spanish</a></li>
+		                      </ul>
       </nav>
     </header>
     <div id="main" role="main">
       <div class="container">
-        <div class="content">
-           <div class="row">
-            <div class="span12">
+       </div>
+           
               <%= render 'layouts/messages' %>
               <%= yield %>
-            </div>
-          </div>
+         
           <footer>
           </footer>
         </div>
       </div> <!--! end of .container -->
     </div> <!--! end of #main -->
+<script>
+$('.dropdown-toggle').dropdown()
+
+</script>
   </body>
 </html>

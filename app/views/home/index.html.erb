@@ -1,4 +1,29 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
+<img src="/assets/paparazzi.jpg" class="virtualBg" />
+<div class="row-fluid">
+  <div class="span4">
+	<div class="hero-unit">
+	<div class="matching-color">
+
+	<h2>	this is fame monitor </h2><br >
+	<h2>	the definitive celebrity chart  powered by real-time media and social buzz
+	</h2></div>
+	</div></div>
+	<div class="row-fluid">
+		<div class="span6 pull-right waydown">
+		<ul class="nav">
+			
+		  <% if user_signed_in? %>
+		    <li>
+			<div class="matching-color">
+		    <h1>Hello <%= current_user.name %> - We will launch our service shortly</h1>
+		    </li>
+		    <li>
+		    <%= link_to 'Logout', signout_path %></div>        
+		    </li>
+		  <% else %>
+		    <li>
+		    <%= link_to image_tag("/assets/facebook.png", :border=>0), signin_path %>  
+		    </li>
+		  <% end %>
+		</ul>
+
