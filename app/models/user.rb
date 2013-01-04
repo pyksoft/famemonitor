@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
   attr_accessible :provider, :uid, :name, :email
+  extend FriendlyId
+    friendly_id :name, use: :slugged
 
   def self.create_with_omniauth(auth)
     create! do |user|

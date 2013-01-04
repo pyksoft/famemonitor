@@ -1,0 +1,21 @@
+<%= simple_form_for(@celebrity) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :aka %>
+    <%= f.input :dob %>
+    <%= f.input :birth_place %>
+    <%= f.input :gender %>
+    <%= f.input :race %>
+    <%= f.input :orientation %>
+    <%= f.input :occupation %>
+    <%= f.input :political_affiliation %>
+    <%= f.input :nationality %>
+    <%= f.input :description %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

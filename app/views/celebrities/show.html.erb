@@ -1,0 +1,60 @@
+<div class="main">
+	<div class="container">
+
+		<h2><span><%= @celebrity.name %> also known as <%= @celebrity.aka %> from <%= @celebrity.nationality %></span></h2>
+		
+		<div class="row">
+			<!--stack 1-->
+			<div class="span4">
+				<ul class="thumbnails">
+					<li class="span4">
+						<div class="thumbnail">
+							<a href="#"><img src="assets/thumb-1.jpg" alt=""></a>
+							<h4>Birthday</h4>
+							<p>Born in: <%= @celebrity.birth_place %> on <%= @celebrity.dob %></p> Zodiac: <%= @celebrity.zodiac_sign %>
+						</div>
+					</li>
+					
+					<li class="span4">
+						<div class="thumbnail">
+							<a href="#"><img src="assets/thumb-2.jpg" alt=""></a>
+							<h4>Occupation</h4>
+							<p><%= @celebrity.occupation %> <a href="#">Read on &raquo;</a></p>
+						</div>
+					</li>
+					
+					<li class="span4">
+						<div class="thumbnail">
+							<a href="#"><img src="assets/thumb-3.jpg" alt=""></a>
+							<h4>Political Affiliation</h4>
+							<p><%= @celebrity.political_affiliation %></p>
+						</div>
+					</li>						
+				</ul>
+			</div>
+			
+			<!--stack 2-->
+			<div class="span4">
+				<ul class="thumbnails">
+					<li class="span4">
+						<div class="thumbnail">
+							<a href="#"><img src="assets/thumb-2.jpg" alt=""></a>
+							<h4>Known for:</h4>
+							<p><%= @celebrity.description %> <a href="#">Read on &raquo;</a></p>
+						</div>
+					</li>
+						
+							<div class="span4">
+								<ul class="thumbnails">
+									<li class="span4">
+										<div class="thumbnail">
+										<div class="current_val">
+											1,987 <br/>	
+												</div>FameScore&#0153;
+											</li>
+											</div>
+							
+								
+					
+					</div></div>
+

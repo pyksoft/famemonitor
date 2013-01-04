@@ -1,19 +1,56 @@
 Famemonitor
 ========================
-
-This application was generated with the rails_apps_composer gem:
-https://github.com/RailsApps/rails_apps_composer
-provided by the RailsApps Project:
-http://railsapps.github.com/
-
-________________________
-
-Recipes:
-["controllers", "core", "email", "extras", "frontend", "gems", "git", "init", "models", "prelaunch", "railsapps", "readme", "routes", "setup", "testing", "views"]
-
-Preferences:
-{:git=>true, :railsapps=>"none", :dev_webserver=>"webrick", :prod_webserver=>"unicorn", :database=>"mysql", :templates=>"erb", :unit_test=>"rspec", :integration=>"capybara", :fixtures=>"none", :frontend=>"bootstrap", :bootstrap=>"less", :email=>"smtp", :authentication=>"omniauth", :omniauth_provider=>"facebook", :authorization=>"none", :form_builder=>"simple_form", :starter_app=>"users_app"}
+/(?<=Name:)(.*?)(?=<\/p>)/m.match(searchText) #name
+/(?<=AKA:)(.*?)(?=<\/p>)/m.match(searchText) #AKA
+/(?<=Born:)(.*?)(?=<\/p>)/m.match(searchText) # dob
+/(?<=Birthplace:)(.*?)(?=<\/p>)/m.match(searchText) # birthplace
+/(?<=Gender:)(.*?)(?=<\/p>)/m.match(searchText) # Gender
+/(?<=Race:)(.*?)(?=<\/p>)/m.match(searchText) # Race
+/(?<=Orientation:)(.*?)(?=<\/p>)/m.match(searchText) # sexual orientation
+/(?<=Occupation:)(.*?)(?=<\/p>)/m.match(searchText) # occupation
+/(?<=Affiliation:)(.*?)(?=<\/p>)/m.match(searchText) # political affiliation
+/(?<=Nationality:)(.*?)(?=<\/p>)/m.match(searchText) # nationality
+/(?<=Description:)(.*?)(?=<\/p>)/m.match(searchText) # known for
 
 ________________________
 
 License
+
+Copyright 2012-2013 Famemonitor, LLC. California, USA
+
+Test-stuff
+
+TweetStream.configure do |config|
+  config.consumer_key       = 'nikomonitor'
+  config.consumer_secret    = 'hallo12345'
+  config.auth_method        = :basic
+end
+
+tool to get keys is twurl (gem install twurl)
+
+
+famemonitor2
+consumer-key m9qbYobLqRZNilnNNdzCwA
+secrect Kux8NOVt9pLmNs6kdeTciA7MD0OmXi6uGFCJj4ffwc
+
+
+twurl authorize --consumer-key m9qbYobLqRZNilnNNdzCwA --consumer-secret Kux8NOVt9pLmNs6kdeTciA7MD0OmXi6uGFCJj4ffwc
+
+twurl authorize --consumer-key m9qbYobLqRZNilnNNdzCwA --consumer-secret Kux8NOVt9pLmNs6kdeTciA7MD0OmXi6uGFCJj4ffwc
+twurl authorize --consumer-key m9qbYobLqRZNilnNNdzCwA --consumer-secret Kux8NOVt9pLmNs6kdeTciA7MD0OmXi6uGFCJj4ffwc
+Go to https://api.twitter.com/oauth/authorize?oauth_consumer_key=m9qbYobLqRZNilnNNdzCwA&oauth_nonce=u44nGNrJM8yI0VhGFbrewufELvdWt4CDI5c9VfQkE&oauth_signature=OpHFQOiqXyYqObMo0ZkiPfNbLuU%253D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1351352696&oauth_token=fdTu2a35Bm6J26x9z7DVpmMzgVixhxojvh6IgsoOXo&oauth_version=1.0 and paste in the supplied PIN
+3495637
+Authorization successful
+
+twurl authorize -u nikomonitor -p hallo12345!     \
+                    --consumer-key ih4HGLLyZH5z2H4Y387apQ       \
+                    --consumer-secret aIOGS1Cqm8RAwfkZAsRlX7fb82v8oiuEwFFwjoQA
+
+					Consumer key	OpHFQOiqXyYqObMo0ZkiPfNbLuU%253D
+					Consumer secret	fdTu2a35Bm6J26x9z7DVpmMzgVixhxojvh6IgsoOXo
+
+Go to https://api.twitter.com/oauth/authorize?oauth_consumer_key=ih4HGLLyZH5z2H4Y387apQ&oauth_nonce=jvcegjSvUIUVzW5yVENynUuiOQnE1HDlqfonIEs2LM&oauth_signature=XAe5jH7BJd3qucOd4emKwnPJqls%253D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1351353278&oauth_token=ZiRr77ILZ9IczxaurQuheagr7XPLcF7Ncmc3jLATwA&oauth_version=1.0 and paste in the supplied PIN
+
+
+
+

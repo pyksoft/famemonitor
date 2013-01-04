@@ -1,0 +1,42 @@
+<h1>Listing celebrities</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Aka</th>
+    <th>Dob</th>
+    <th>Birth place</th>
+    <th>Gender</th>
+    <th>Race</th>
+    <th>Orientation</th>
+    <th>Occupation</th>
+    <th>Political affiliation</th>
+    <th>Nationality</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @celebrities.each do |celebrity| %>
+  <tr>
+    <td><%= celebrity.name %></td>
+    <td><%= celebrity.aka %></td>
+    <td><%= celebrity.dob %></td>
+    <td><%= celebrity.birth_place %></td>
+    <td><%= celebrity.gender %></td>
+    <td><%= celebrity.race %></td>
+    <td><%= celebrity.orientation %></td>
+    <td><%= celebrity.occupation %></td>
+    <td><%= celebrity.political_affiliation %></td>
+    <td><%= celebrity.nationality %></td>
+    <td><%= celebrity.description %></td>
+    <td><%= link_to 'Show', celebrity %></td>
+
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @celebrities %>
+
+<br />
+
