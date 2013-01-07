@@ -700,37 +700,37 @@ i[class*='icon-new-'].big{
     height:24px;
 }
 i.icon-new-group{
-    background-image:url('../img/icons/glyphicons_043_group.png');
+    background-image:url('/assets/icons/glyphicons_043_group.png');
     background-size:14px 11px;
     position:relative;
     top:2px;
 }
 .icon-new-stats{
-    background-image:url('../img/icons/glyphicons_040_stats.png');
+    background-image:url('/assets/icons/glyphicons_040_stats.png');
 }
 .icon-new-charts{
-    background-image:url('../img/icons/glyphicons_041_charts.png');
+    background-image:url('/assets/icons/glyphicons_041_charts.png');
 }
 .icon-new-gplus{
-    background-image:url('../img/icons/glyphicons_362_google+_alt.png');
+    background-image:url('/assets/icons/glyphicons_362_google+_alt.png');
 }
 .icon-new-twitter{
-    background-image:url('../img/icons/glyphicons_392_twitter.png');
+    background-image:url('/assets/icons/glyphicons_392_twitter.png');
 }
 .icon-new-facebook{
-    background-image:url('../img/icons/glyphicons_390_facebook.png');
+    background-image:url('/assets/icons/glyphicons_390_facebook.png');
 }
 .icon-new-dashboard{
-    background-image:url('../img/icons/glyphicons_331_dashboard.png');
+    background-image:url('/assets/icons/glyphicons_331_dashboard.png');
 }
 .icon-new-social{
-    background-image:url('../img/icons/glyphicons_355_announcement.png');
+    background-image:url('/assets/icons/glyphicons_355_announcement.png');
 }
 .icon-new-gallery{
-    background-image:url('../img/icons/glyphicons_319_sort.png');
+    background-image:url('/assets/icons/glyphicons_319_sort.png');
 }
 .icon-new-blog{
-    background-image:url('../img/icons/glyphicons_351_book_open.png');
+    background-image:url('/assets/icons/glyphicons_351_book_open.png');
 }
 
 

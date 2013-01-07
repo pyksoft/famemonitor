@@ -2,7 +2,8 @@ class Celebrity < ActiveRecord::Base
   zodiac_reader :dob
   extend FriendlyId
     friendly_id :name, use: :slugged
-  attr_accessible :zodiac_sign_id, :aka, :birth_place, :description, :dob, :gender, :name, :nationality, :occupation, :orientation, :political_affiliation, :race
+  attr_accessible :zodiac_sign_id, :aka, :birth_place, :description, :dob, :gender, :name, :nationality, :occupation, :orientation, :political_affiliation, :race,
+    :id, :created_at, :updated_at, :slug
   validates :name, :uniqueness => {:scope => :description}
   
   def self.dead

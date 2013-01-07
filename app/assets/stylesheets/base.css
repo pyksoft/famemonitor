@@ -160,7 +160,7 @@ input[type=week] {
 	Header Styles
 *****************************************************************************/
 
-header {
+header.home {
     zoom: 1;
 	width: auto;
     height: auto;
@@ -176,7 +176,7 @@ header {
 	background-size: cover;
 }
 
-header .container {height: 100%;}
+header.home .container {height: 100%;}
 
 header h1, header p {
     text-transform: uppercase;
