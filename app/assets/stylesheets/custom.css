@@ -1,0 +1,73 @@
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1170px;
+}
+
+.navbar-inverse .navbar-inner {
+    background-color: #1B1B1B;
+    background-image: -moz-linear-gradient(center top , #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+}
+.btn-large {
+    border-radius: 6px 6px 6px 6px;
+    font-size: 17.5px;
+    padding: 11px 19px !important;
+}
+.offset2 {
+    margin-left: 230px;
+}
+.span8 {
+    width: 770px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 10px 0;
+    text-rendering: optimizelegibility;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #2F353E;
+    /*font-weight: 300;*/
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24.5px;
+}
+h1, h2, h3 {
+    line-height: 40px;
+}
+
+h1 {
+    font-size: 38.5px;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.span3 {
+    width: 260px;
+}
+[class*="span3"] {
+    float: left;
+    margin-left: 30px;
+    min-height: 1px;
+}
+
+a {
+    color: #000000;
+}
+footer {
+    background: none repeat scroll 0 0 #2F353E;
+}
+footer {
+    margin-bottom: 0;
+    margin-top: 25px;
+    padding: 25px 20px 10px;
+    width: auto;
+}

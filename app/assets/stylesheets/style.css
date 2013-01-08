@@ -139,7 +139,7 @@ header{
     background-color:rgba(247,247,247,1);
     padding:10px 20px 10px 30px;
     border-bottom:1px rgba(233,233,233,1) solid;
-    position:fixed;
+    /*position:fixed;*/
     top:0;left:0;right:0;  
     z-index:401;
     box-shadow:inset 0px -1px 4px 0px rgba(0,0,0,0.05);
@@ -322,22 +322,22 @@ header i{
 
 
 footer{
-    height:40px;
-    background-color:rgba(251,251,251,1);
-    position:fixed;
-    bottom:0;left:0;right:0;
-    z-index:400;
-    border-top:1px rgba(233,233,233,1) solid;
+    /*height:40px;*/
+    /*background-color:rgba(251,251,251,1);*/
+    /*position:fixed;*/
+    /*bottom:0;left:0;right:0;*/
+    /*z-index:400;*/
+    /*border-top:1px rgba(233,233,233,1) solid;*/
  
 }
 
 
 
-.item{
+/*.item{
     margin-bottom:20px;
     padding-bottom:10px;
     border-bottom:1px #EEEEEE solid;
-}
+}*/
 .item .cTitle{
     font-family:"OpenSansLight";
     font-size:22px;
@@ -378,7 +378,7 @@ hr {
     -webkit-border-radius:1px;
         -moz-border-radius:1px;
             border-radius:1px;
-    font-family:"OpenSansRegular";
+    /*font-family:"OpenSansRegular";*/
 }
 
 .btn-group.sharp .btn:first-child{
@@ -734,9 +734,9 @@ i.icon-new-group{
 }
 
 
-h1,h2,h3,h4,h5,h6{
+/*h1,h2,h3,h4,h5,h6{
     font-weight:lighter;
-}
+}*/
 .container-fluid#footMain{
     padding-top:10px;
 }
@@ -922,9 +922,9 @@ ul.filter li:hover{
 }
 
 
-h1,h2,h3,h4{
+/*h1,h2,h3,h4{
     font-weight:lighter;
-}
+}*/
 
 .vScroll{
     overflow-y:scroll;
