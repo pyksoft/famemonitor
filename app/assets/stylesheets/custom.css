@@ -1,6 +1,6 @@
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+/*.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
     width: 1170px;
-}
+}*/
 
 .navbar-inverse .navbar-inner {
     background-color: #1B1B1B;
@@ -19,7 +19,7 @@
 .span8 {
     width: 770px;
 }
-
+.icon-cloud:before                { content: "\f0c2"; }
 h1, h2, h3, h4, h5, h6 {
     color: inherit;
     font-family: inherit;
@@ -35,6 +35,9 @@ h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+h2 {
+    font-size: 31.5px;
+}
 h3 {
     font-size: 24.5px;
 }
@@ -52,6 +55,9 @@ p {
 
 .span3 {
     width: 260px;
+}
+.span4 {
+    width: 370px !important;
 }
 [class*="span3"] {
     float: left;

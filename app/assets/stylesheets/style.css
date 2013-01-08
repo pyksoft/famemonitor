@@ -192,7 +192,7 @@ header i{
     padding:10px 20px 10px 30px;
     border-bottom:1px rgba(240,240,240,1) solid;
     position:fixed;
-    top:49px;left:0;right:0;
+    top:110px;left:0;right:0;
     z-index:400;
     background-color:rgb(251,251,251);
 }
@@ -224,7 +224,7 @@ header i{
     -o-box-sizing:border-box;
     box-sizing:border-box;
     position:fixed;
-    top:99px;left:0;right:0;
+    top:160px;left:0;right:0;
     overflow:auto;
 }
 .bcrumbs{

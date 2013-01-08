@@ -12,12 +12,20 @@
     <%= yield(:head) %>
 	<style> 
     	body { padding-top: 105px; }
+    	footer{
+      /*background-color:rgba(251,251,251,1);*/
+      position:fixed;
+      bottom:0;left:0;right:0;
+      z-index:400;
+      border-top:1px rgba(233,233,233,1) solid;
+    }
     </style>
 <meta name="google-site-verification" content="x2spx7CNlUWLGx9vZdty8XBAReUrP1Yz99r_6mhSDs0" />
   </head>
   <body>
 	<div class="frontLayer">
-	  <%= render 'layouts/header' %>
+		<%= render 'layouts/top_header' %>
+	  <%#= render 'layouts/header' %>
 	  <%= render 'layouts/subheader' %>
 		<section id="mainContainer" class="container-fluid">
 		  <div class="row-fluid">
@@ -27,15 +35,16 @@
 			  <!-- end Navigation -->
 			</div>
 			<div class="span10 content borBox" style="height: 459px;">
-				<%= render 'layouts/messages' %>
+				<%#= render 'layouts/messages' %>
 				<%= yield %>
 			</div>
 		  </div>
 		</section>
-	  <%= render 'layouts/footer' %>
+	<%#= render 'layouts/footer' %>
 	</div>
 	<script>
 	$('.dropdown-toggle').dropdown()
 	</script>
+	<footer></footer>
   </body>
 </html>

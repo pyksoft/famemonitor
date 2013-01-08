@@ -13,31 +13,15 @@
     <%= yield(:head) %>
 	  <style> 
     	body { padding-top: 105px; }
+    	.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1170px;
+}
     </style>
     <meta name="google-site-verification" content="x2spx7CNlUWLGx9vZdty8XBAReUrP1Yz99r_6mhSDs0" />
   </head>
   <body>
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
-          <i class="icon icon-reorder"></i> Menu
-        </a>
-        <a href="#" class="brand"><img src="/assets/logo.png"></a>
-        <a class="btn btn-large btn-primary btn-blue pull-right" href="/signin">Login with Facebook</a>
-        <div class="nav-collapse collapse">
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-    <div class="sub-navbar">
-      <div class="container"> </div>
-    </div>
-  </div>
+  <%= render 'layouts/top_header' %>
 	<%= yield %>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
     <footer></footer>
   </body>
 </html>
