@@ -13,8 +13,8 @@
 	<style> 
     	body { padding-top: 105px; }
     	footer{
-      /*background-color:rgba(251,251,251,1);*/
-      position:fixed;
+      /*background-color:rgba(251,251,251,1);*/	
+      /*position:fixed;*/
       bottom:0;left:0;right:0;
       z-index:400;
       border-top:1px rgba(233,233,233,1) solid;
@@ -27,14 +27,14 @@
 		<%= render 'layouts/top_header' %>
 	  <%#= render 'layouts/header' %>
 	  <%= render 'layouts/subheader' %>
-		<section id="mainContainer" class="container-fluid">
+		<section id="mainContainer" class="container-fluid" style ="margin-top:40px">
 		  <div class="row-fluid">
-			<div class="span2 sideBar" style="height: 439px;">			  
+			<div class="span2 sideBar position-fixed">			  
 			  <!-- Navigation -->
 			<%= render 'layouts/sidebar' %>
 			  <!-- end Navigation -->
 			</div>
-			<div class="span10 content borBox" style="height: 459px;">
+			<div class="span10 content borBox" style="height: auto;overflow:hidden;margin-left:230px">
 				<%#= render 'layouts/messages' %>
 				<%= yield %>
 			</div>

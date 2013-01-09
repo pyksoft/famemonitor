@@ -192,7 +192,7 @@ header i{
     padding:10px 20px 10px 30px;
     border-bottom:1px rgba(240,240,240,1) solid;
     position:fixed;
-    top:110px;left:0;right:0;
+    top:105px;left:0;right:0;
     z-index:400;
     background-color:rgb(251,251,251);
 }
@@ -223,7 +223,7 @@ header i{
     -ms-box-sizing:border-box;
     -o-box-sizing:border-box;
     box-sizing:border-box;
-    position:fixed;
+    /*position:fixed;*/
     top:160px;left:0;right:0;
     overflow:auto;
 }
@@ -594,7 +594,7 @@ hr {
     z-index:41;
 }
 .frontLayer{
-    position:absolute;
+    /*position:absolute;*/
     z-index:20;
     top:0;right:0;left:0;bottom:0;
 }
@@ -1404,4 +1404,8 @@ pre code {
     -webkit-border-radius: 0;
         -moz-border-radius: 0;
             border-radius: 0;
+}
+
+.position-fixed {
+  position:fixed;
 }
