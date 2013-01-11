@@ -3,7 +3,7 @@
 
   <div class="form-inputs">
     <%= f.input :title %>
-    <%= f.hidden current_user.id rescue nil %>
+    <%= f.hidden_field :user_id, :value => current_user.id %>   
     <%= f.input :body %>
     <%= f.input :celebrity_id %>
   </div>
