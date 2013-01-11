@@ -1,4 +1,8 @@
 Famemonitor::Application.routes.draw do
+  resources :stories
+
+  resources :fan_pages
+
   resources :celebrities
 
   root :to => "home#index"

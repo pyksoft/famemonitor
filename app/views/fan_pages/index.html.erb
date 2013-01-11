@@ -1,0 +1,31 @@
+<h1>Listing fan_pages</h1>
+
+<table>
+  <tr>
+    <th>Celebrity</th>
+    <th>User</th>
+    <th>Url</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fan_pages.each do |fan_page| %>
+  <tr>
+    <td><%= fan_page.celebrity_id %></td>
+    <td><%= fan_page.user_id %></td>
+    <td><%= fan_page.url %></td>
+    <td><%= fan_page.name %></td>
+    <td><%= fan_page.description %></td>
+    <td><%= link_to 'Show', fan_page %></td>
+    <td><%= link_to 'Edit', edit_fan_page_path(fan_page) %></td>
+    <td><%= link_to 'Destroy', fan_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fan page', new_fan_page_path %>
