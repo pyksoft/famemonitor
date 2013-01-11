@@ -1,6 +1,8 @@
 class StoriesController < ApplicationController
   # GET /stories
   # GET /stories.json
+  #before_filter :authenticate_user!
+  
   def index
     @stories = Story.all
 
