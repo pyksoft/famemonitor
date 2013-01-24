@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130111220923) do
+ActiveRecord::Schema.define(:version => 20130118055217) do
 
   create_table "celebrities", :force => true do |t|
     t.string   "name"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(:version => 20130111220923) do
     t.integer  "zodiac_sign_id"
     t.string   "slug"
     t.string   "twitter"
-    t.string   "feacebook"
+    t.string   "facebook"
     t.string   "website"
     t.string   "blog"
     t.string   "youtube"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(:version => 20130111220923) do
 
   add_index "celebrities", ["birth_place"], :name => "index_celebrities_on_birth_place"
   add_index "celebrities", ["blog"], :name => "index_celebrities_on_blog"
-  add_index "celebrities", ["feacebook"], :name => "index_celebrities_on_feacebook"
+  add_index "celebrities", ["facebook"], :name => "index_celebrities_on_feacebook"
   add_index "celebrities", ["flickr"], :name => "index_celebrities_on_flickr"
   add_index "celebrities", ["gender"], :name => "index_celebrities_on_gender"
   add_index "celebrities", ["name"], :name => "index_celebrities_on_name"
@@ -89,6 +89,20 @@ ActiveRecord::Schema.define(:version => 20130111220923) do
   add_index "stories", ["celebrity_id"], :name => "index_stories_on_celebrity_id"
   add_index "stories", ["title"], :name => "index_stories_on_title"
   add_index "stories", ["user_id"], :name => "index_stories_on_user_id"
+
+  create_table "twitter_counts", :force => true do |t|
+    t.integer  "celebrity_id"
+    t.integer  "followers"
+    t.integer  "following"
+    t.integer  "tweets"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "twitter_counts", ["celebrity_id"], :name => "index_twitter_counts_on_celebrity_id"
+  add_index "twitter_counts", ["followers"], :name => "index_twitter_counts_on_followers"
+  add_index "twitter_counts", ["following"], :name => "index_twitter_counts_on_following"
+  add_index "twitter_counts", ["tweets"], :name => "index_twitter_counts_on_tweets"
 
   create_table "users", :force => true do |t|
     t.string   "name"

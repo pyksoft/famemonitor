@@ -1,0 +1,29 @@
+<h1>Listing twitter_counts</h1>
+
+<table>
+  <tr>
+    <th>Celebrity</th>
+    <th>Followers</th>
+    <th>Following</th>
+    <th>Tweets</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @twitter_counts.each do |twitter_count| %>
+  <tr>
+    <td><%= twitter_count.celebrity_id %></td>
+    <td><%= twitter_count.followers %></td>
+    <td><%= twitter_count.following %></td>
+    <td><%= twitter_count.tweets %></td>
+    <td><%= link_to 'Show', twitter_count %></td>
+    <td><%= link_to 'Edit', edit_twitter_count_path(twitter_count) %></td>
+    <td><%= link_to 'Destroy', twitter_count, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Twitter count', new_twitter_count_path %>

@@ -1,0 +1,14 @@
+<%= simple_form_for(@twitter_count) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :celebrity_id %>
+    <%= f.input :followers %>
+    <%= f.input :following %>
+    <%= f.input :tweets %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

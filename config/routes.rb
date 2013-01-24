@@ -1,4 +1,6 @@
 Famemonitor::Application.routes.draw do
+  resources :twitter_counts
+
   resources :stories
 
   resources :fan_pages
